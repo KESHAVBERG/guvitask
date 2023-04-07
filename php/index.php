@@ -17,7 +17,7 @@
         </div>
         <input id="submit" type="button" class="btn-submit" value="Submit" />
     </form>
-    <a href="">login</a>
+    <a href="login.php">login</a>
 
     <script>
         $(document).ready(function(){
