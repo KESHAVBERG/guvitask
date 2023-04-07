@@ -17,28 +17,26 @@
     <script>
         $(document).ready(function(){
             $('#submit').click(function(){
-                console.log('btn')
 
             var email = $("#email").val();
             var password = $("#password").val();   
 
             if(email == ''|| password == ''){alert('All fileds nessary')}
-            // $.ajax({
-            //     type:'POST',
-            //     url:'registersubmission.php',
-            //     data:{
-            //         name:name,
-            //         email:email,
-            //         password:password
-            //     },
-            //     cache:false,
-            //     success: function(data) {
-            //         alert(data);
-            //     },
-            //     error: function(xhr, status, error) {
-            //          console.error(xhr);
-            //     }
-            // })
+            $.ajax({
+                type:'POST',
+                url:'loginsubmission.php',
+                data:{
+                    email:email,
+                    password:password
+                },
+                cache:false,
+                success: function(data) {
+                    alert(data);
+                },
+                error: function(xhr, status, error) {
+                     console.error(xhr);
+                }
+            })
          })
         })
     </script>
