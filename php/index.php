@@ -6,7 +6,7 @@
 <body>
     <form>
         <div class="box">
-            <label>Name:</label><input type="text" name="firstName" id="firstName" />
+            <label>Name:</label><input type="text" name="name" id="name" />
         </div>
         
         <div class="box">
@@ -22,8 +22,29 @@
     <script>
         $(document).ready(function(){
             $('#submit').click(function(){
-                alert("btn pressed")
+
+            var name = $("#name").val();
+            var email = $("#email").val();
+            var password = $("#password").val();   
+
+            if(name == ''||email == ''|| password == ''){alert('All fileds nessary')}
+            $.ajax({
+                type:'POST',
+                url:'registersubmission.php',
+                data:{
+                    name:name,
+                    email:email,
+                    password:password
+                },
+                cache:false,
+                success: function(data) {
+                    alert(data);
+                },
+                error: function(xhr, status, error) {
+                     console.error(xhr);
+                }
             })
+         })
         })
     </script>
 </body>
