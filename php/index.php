@@ -6,7 +6,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     </head>
 <body>
-    <div class="container-fluid">
+    <div class="container-fluid py-5 pl-5">
     <form>
         <div class="form-group">
             <label>Name:</label>

@@ -6,7 +6,7 @@
     </head>
     <body>
     <form>
-    <div class="container-fluid">
+    <div class="container-fluid py-5 pl-5">
 
     <div class="form-group">
             <label>Email:</label><input type="email" name="email" id="email" />
