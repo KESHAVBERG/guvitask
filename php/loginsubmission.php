@@ -1,4 +1,8 @@
+
 <?php
+    $bool = false;
+
+ 
     $email = $_POST['email'];
     $password = $_POST['password'];
 
@@ -10,13 +14,13 @@
 
     $sql = "SELECT * FROM `userdetails` WHERE `email` = '$email'";
     $result = mysqli_query($conn, $sql);
-    $bool = false;
 
     if (mysqli_num_rows($result) > 0) {
         while($row = mysqli_fetch_assoc($result)) {
             if($row['password'] == $password){
                 echo('Login successful');
                 $bool=true;
+                break;
             }else{
                 echo('incorrect password');
             }
@@ -25,7 +29,11 @@
         echo "no user exists";
       }
 
-
+ 
     $conn->close();
 
+    if($bool){
+    }
+
 ?>
+
