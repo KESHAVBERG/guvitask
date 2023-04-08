@@ -10,7 +10,7 @@
         <div class="box">
             <label>password:</label><input type="password" name="password" id="password" />
         </div>
-        <input id="submit" type="button" class="btn-submit" value="Submit" />
+        <input id="submit" type="button" class="btn-submit" value="Login" />
     </form>
     <a href="index.php">register</a>
 
