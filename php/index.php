@@ -6,27 +6,29 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     </head>
 <body>
-    <div class="container-fluid py-5 pl-5">
+
     <form>
+    <div class="container py-5 pl-5 mr-5 pr-5">
+    <h1 class="my-3">Create  Your Account</h1>
+
         <div class="form-group">
             <label>Name:</label>
-            <input type="text" name="name" id="name" />
+            <input type="text" class="form-control" name="name" id="name" />
         </div>
         
         <div class="form-group">
             <label>Email:</label>
-            <input type="email" name="email" id="email" />
+            <input type="email" class="form-control" name="email" id="email" />
         </div>
         <div class="form-group">
             <label>password:</label>
-            <input type="password" name="password" id="password" />
+            <input type="password" class="form-control" name="password" id="password" />
         </div>
-        <div class="form-group">
-            <input id="submit" type="button" class="btn-submit" value="Register" />
-        </div>
+            <input id="submit" type="button" class="btn-submit btn btn-outline-info" value="Register" />
+            <a href="login.php" class="btn btn-outline-info">login</a>
+            </div>
+
     </form>
-    <a href="login.php">login</a>
-    </div>
 
     <script>
         $(document).ready(function(){

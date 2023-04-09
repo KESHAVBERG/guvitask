@@ -9,19 +9,21 @@
     </head>
     <body>
     <form>
-    <div class="container-fluid py-5 pl-5">
-
+    <div class="container py-5 pl-5 mr-5 pr-5">
+        <h1 class="my-3">Login To Your Account</h1>
     <div class="form-group">
-            <label>Email:</label><input type="email" name="email" id="email" />
-        </div>
-        <div class="form-group">
-            <label>password:</label><input type="password" name="password" id="password" />
-        </div>
-        <input id="submit" type="button" class="btn-submit" value="Login" />
+            <label>Email:</label>
+            <input type="email" class="form-control" name="email" id="email" />
+    </div>
+    <div class="form-group">
+            <label>password:</label>
+            <input type="password" class="form-control" name="password" id="password" />
+    </div>
+        <input id="submit" type="button" class="btn-submit btn btn-outline-info" value="Login" />
     </form>
-    <a href="index.php">register</a>
+    <a href="index.php" class="btn btn-outline-info">register</a>
 
-</div>
+    </div>
 
     <script>
         $(document).ready(function(){
